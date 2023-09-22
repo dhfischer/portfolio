@@ -1,0 +1,192 @@
+/* CSS para o Menu */
+.navbar {
+    z-index: 1000;
+    border-bottom: 2px solid #daa520;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bg-preto {
+    background-color: #1C1C1C;
+}
+
+.icon-hover {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon-hover:hover {
+    color: #daa520;
+    transform: scale(1.2);
+}
+
+ /* Estilo padrão para o texto do menu */
+.menu-text {
+    transition: color 0.3s linear;
+}
+
+  /* Efeito de hover gradual */
+.nav-item:hover .menu-text {
+    color: #daa520;
+}
+
+/* Estilo para o item de menu selecionado */
+.nav-item.selected .menu-text {
+    color: #daa520;
+}
+
+/* CSS para a seção "Sobre" */
+#sobre {
+    background-color: #1C1C1C;
+    padding: 100px 0;
+    color: #e5e5e5;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+    transition: transform 0.4s ease-in-out;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.title span {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.actions a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.actions a:hover {
+    background-color: #0056b3;
+}
+
+.profile img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* CSS para a seção "Habilidades" */
+#skills {
+    background-color: #1C1C1C;
+    color: #e5e5e5;
+    padding: 100px 0;
+}
+
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #212529 !important;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border-bottom: 2px solid #212529 !important;
+}
+
+.card:hover {
+    background-color: rgb(22, 23, 26) !important;
+    color: #daa520;
+    border-bottom: 2px solid #daa520 !important;
+}
+
+/* CSS para a seção "Projetos" */
+#projects {
+    background-color: #d0d0d0;
+    padding: 100px 0;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.highlights, .allprojects {
+    text-align: center;
+}
+
+.cards-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-project {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-project:hover {
+    background-color: #0056b3;
+}
+
+/* CSS para a seção "Contatos" */
+#contacts {
+    background-color: #c0c0c0;
+    padding: 100px 0;
+}
+
+.contacts h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    text-align: center;
+    margin: 20px;
+}
+
+.icon .box img {
+    max-width: 60px;
+    height: auto;
+}
+
+.icon p {
+    margin-top: 10px;
+    font-size: 18px;
+}
