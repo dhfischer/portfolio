@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Configuração de template engine (use o que preferir, EJS ou Pug, por exemplo)
-app.set('view engine', 'ejs'); // ou 'pug' se preferir
+// Configuração de template engine
+app.set('view engine', 'ejs');
 
 // Configurar o middleware para servir arquivos estáticos na pasta 'public'
 app.use(express.static('public'));
