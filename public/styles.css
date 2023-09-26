@@ -143,6 +143,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .card-project {
@@ -186,8 +187,9 @@
 
 /* CSS para a seção "Contatos" */
 #contacts {
-    background-color: #c0c0c0;
+    background-color: #1C1C1C;
     padding: 100px 0;
+    color: #e5e5e5;
 }
 
 .contacts h2 {
@@ -215,4 +217,32 @@
 .icon p {
     margin-top: 10px;
     font-size: 18px;
+}
+
+/* CSS personalizado para o modal */
+.custom-modal .modal-content {
+    background-color: rgb(22, 23, 26);
+    color: white;
+}
+
+.custom-modal .modal-footer .btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: black;
+}
+
+.custom-modal .modal-footer .btn-primary:hover {
+    background-color: #ffab00;
+    border-color: #ffab00;
+}
+
+.custom-modal .modal-footer .btn-secondary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: black;
+}
+
+.custom-modal .modal-footer .btn-secondary:hover {
+    background-color: #ffab00;
+    border-color: #ffab00;
 }
