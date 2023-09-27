@@ -46,13 +46,13 @@
                 <div class="row">
                     <div class="col-md-9 mt-3 mb-5"> 
                         <div class="title">
-                            <h1>Dhavi Fischer</h1>
-                            <span>Desenvolvedor Web</span>
-                            <p>Desenvolvedor Back-End.</p>
+                            <h1><%= about.name %></h1>
+                            <span><%= about.title %></span>
+                            <p><%= about.detail %></p>
                         </div>
                         
-                        <button type="button" class="btn btn-warning rounded-pill me-3">Download CV</button>
-                        <button type="button" class="btn btn-outline-warning rounded-pill">Entrar em contato</button>
+                        <a href="#" class="btn btn-warning rounded-pill me-3">Download CV</a>
+                        <a href="<%= about.email %>" class="btn btn-outline-warning rounded-pill">Entrar em contato</a>
                     </div>
                     <div class="col-md-3 mt-3"> 
                         <div class="profile">
@@ -65,14 +65,8 @@
                 <div class="row">
                     <div class="col-md-12 mt-5">
                         <div class="about">
-                            <h2 class="text-center mb-4">Sobre mim</h2>
-                            <p class="text-center">
-                                Sou um Desenvolvedor Web com proficiência em uma ampla variedade de tecnologias, incluindo HTML, CSS, PHP, Python, 
-                                <br>Java, TypeScript e JavaScript. Minha paixão reside na criação de sistemas inovadores e sou verdadeiramente apaixonado 
-                                <br>pelo mundo da programação. Sempre buscando novos desafios e oportunidades para aprimorar minhas habilidades, 
-                                <br>estou comprometido em fornecer soluções excepcionais e eficazes por meio da 
-                                <br>minha experiência em desenvolvimento web.
-                            </p>
+                            <h2 class="text-center mb-4"><%= about.aboutme %></h2>
+                            <p class="text-center"><%= about.description %></p>
                         </div>
                     </div>
                 </div>
@@ -82,85 +76,19 @@
         <!-- Habilidades -->
         <section id="skills" class="js-section">
             <div class="skills">
-                <div class="container">
-                    <h2 class="text-center">Habilidades</h2>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>HTML5/CSS</p>
-                                <i class="fa-brands fa-html5 fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>CSS3</p>
-                                <i class="fa-brands fa-css3-alt fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>JavaScript</p>
-                                <i class="fa-brands fa-square-js fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>Angular</p>
-                                <i class="fa-brands fa-angular fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>Tailwind CSS</p>
-                                <i class="fa-brands fa-css3 fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>Python</p>
-                                <i class="fa-brands fa-python fa-3x mb-2"></i>
-                            </div>
-                        </div>
+              <div class="container">
+                <h2 class="text-center">Habilidades</h2>
+                <div class="row">
+                  <% for (const skill of skills) { %>
+                  <div class="col-md-2">
+                    <div class="card text-center text-warning">
+                      <p><%= skill.name %></p>
+                      <i class="fa-brands <%= skill.icon %> fa-3x mb-2"></i>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>PHP</p>
-                                <i class="fa-brands fa-php fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>Java</p>
-                                <i class="fa-brands fa-java fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>Docker</p>
-                                <i class="fa-brands fa-docker fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>AWS</p>
-                                <i class="fa-brands fa-aws fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>Laravel</p>
-                                <i class="fa-brands fa-laravel fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card text-center text-warning">
-                                <p>Vue.js</p>
-                                <i class="fa-brands fa-vuejs fa-3x mb-2"></i>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                  <% } %>
                 </div>
+              </div>
             </div>
         </section>
         
@@ -170,47 +98,21 @@
                 <h2 class="text-center mb-5">Projetos</h2>
                 <div class="allprojects">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="card-project" data-bs-toggle="modal" data-bs-target="#projeto1Modal">
-                                <img src="/images/eflyer.jpg" alt="Projeto 1">
-                                <div class="overlay">
-                                    <h3>Batalha Naval</h3>
-                                    <div class="icons">
-                                        <i class="fa-brands fa-python fa-xl mt-3"></i>
+                        <% for (const project of projects) { %>
+                            <div class="col-md-4">
+                                <div class="card-project" data-bs-toggle="modal" data-bs-target="#<%= project.id %>Modal">
+                                    <img src="<%= project.image %>" alt="<%= project.title %>">
+                                    <div class="overlay">
+                                        <h3><%= project.title %></h3>
+                                        <div class="icons">
+                                            <% for (const technology of project.technologies) { %>
+                                                <i class="fa-brands fa-<%= technology.toLowerCase() %> fa-xl mt-3 ms-2"></i>
+                                            <% } %>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-project" data-bs-toggle="modal" data-bs-target="#projeto2Modal">
-                                <img src="/images/eflyer_2.jpg" alt="Projeto 2">
-                                <div class="overlay">
-                                    <h3>Pizzaria</h3>
-                                    <div class="icons">
-                                        <i class="fa-brands fa-html5 fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-css3-alt fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-bootstrap fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-vuejs fa-xl mt-3 ms-2"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-project" data-bs-toggle="modal" data-bs-target="#projeto3Modal">
-                                <img src="/images/eflyer.jpg" alt="Projeto 3">
-                                <div class="overlay">
-                                    <h3>Serviço de Streaming</h3>
-                                    <div class="icons">
-                                        <i class="fa-brands fa-html5 fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-css3-alt fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-bootstrap fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-python fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-angular fa-xl mt-3 ms-2"></i>
-                                        <i class="fa-brands fa-docker fa-xl mt-3 ms-2"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <% } %>
                     </div>
                 </div>
             </div>
@@ -219,129 +121,58 @@
         <!-- Contato -->
         <section id="contacts" class="js-section">
             <div class="contacts">
-                <div class="container">
-                    <h2 class="text-center mb-4">Contatos</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="icon">
-                                <a href="mailto:dhavi.fischer@gmail.com" target="_blank">
-                                    <i class="fa-solid fa-envelope fa-2x text-warning"></i>
-                                </a>
-                                <p class="text-center">dhavi.fischer@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="icon">
-                                <a href="https://www.linkedin.com/in/dhavi-fischer-9b701777/" target="_blank">
-                                    <i class="fab fa-linkedin fa-2x text-warning"></i>
-                                </a>
-                                <p class="text-center">@dhavi-fischer</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="icon">
-                                <a href="https://github.com/dhfischer" target="_blank">
-                                    <i class="fab fa-github fa-2x text-warning"></i>
-                                </a>
-                                <p class="text-center">@dhfischer</p>
-                            </div>
-                        </div>
+              <div class="container">
+                <h2 class="text-center mb-4">Contatos</h2>
+                <div class="row">
+                  <% for (const contact of contacts) { %>
+                  <div class="col-md-4">
+                    <div class="icon">
+                      <a href="<%= contact.link %>" target="_blank">
+                        <i class="fab <%= contact.icon %> fa-2x text-warning"></i>
+                      </a>
+                      <p class="text-center"><%= contact.text %></p>
                     </div>
+                  </div>
+                  <% } %>
                 </div>
+              </div>
             </div>
-        </section> 
+        </section>
 
         <!-- Modal -->
-        <div class="modal fade custom-modal" id="projeto1Modal" tabindex="-1" aria-labelledby="projeto1ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+        <% for (const projectModal of projectsModals) { %>
+            <div class="modal fade custom-modal" id="<%= projectModal.id %>" tabindex="-1" aria-labelledby="<%= projectModal.id %>Label" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-warning" id="projeto1ModalLabel">Batalha Naval</h5>
-                        <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                  <div class="modal-header">
+                    <h5 class="modal-title text-warning" id="<%= projectModal.id %>Label"><%= projectModal.title %></h5>
+                    <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p>Descrição do projeto:</p>
+                        <p><%= projectModal.description %></p>
+                        <p>Technologias usadas:</p>
+                        <ul>
+                          <% for (const technology of projectModal.technologies) { %>
+                            <li><%= technology %></li>
+                          <% } %>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <img src="<%= projectModal.image %>" style="width: 100%;" alt="<%= projectModal.title %>">
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Descrição do projeto:</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo at metus hendrerit tristique. Donec vel turpis non arcu gravida dictum ac in neque.</p>
-                                <p>Technologias usadas:</p>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Outra tecnologia</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="/images/eflyer.jpg" style="width: 100%;" alt="Projeto 1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-primary">Ir para o Projeto</a>
-                        <a href="#" class="btn btn-secondary">Ir para o Repositório</a>
-                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="<%= projectModal.projectLink %>" class="btn btn-primary">Ir para o Projeto</a>
+                    <a href="<%= projectModal.repositoryLink %>" class="btn btn-secondary">Ir para o Repositório</a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="modal fade custom-modal" id="projeto2Modal" tabindex="-1" aria-labelledby="projeto2ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-warning" id="projeto2ModalLabel">Batalha Naval</h5>
-                        <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Descrição do projeto:</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo at metus hendrerit tristique. Donec vel turpis non arcu gravida dictum ac in neque.</p>
-                                <p>Technologias usadas:</p>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Outra tecnologia</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="/images/eflyer.jpg" style="width: 100%;" alt="Projeto 1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-primary">Ir para o Projeto</a>
-                        <a href="#" class="btn btn-secondary">Ir para o Repositório</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade custom-modal" id="projeto3Modal" tabindex="-1" aria-labelledby="projeto3ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-warning" id="projeto3ModalLabel">Batalha Naval</h5>
-                        <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Descrição do projeto:</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo at metus hendrerit tristique. Donec vel turpis non arcu gravida dictum ac in neque.</p>
-                                <p>Technologias usadas:</p>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Outra tecnologia</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="/images/eflyer.jpg" style="width: 100%;" alt="Projeto 1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-primary">Ir para o Projeto</a>
-                        <a href="#" class="btn btn-secondary">Ir para o Repositório</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <% } %>          
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     
     </body>
 </html>
