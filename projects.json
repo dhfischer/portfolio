@@ -1,0 +1,31 @@
+[
+  {
+    "id": "projeto1",
+    "title": "Batalha Naval",
+    "description": "Descrição do Projeto 1.",
+    "technologies": ["Python", "Outra Tecnologia"],
+    "image": "/images/eflyer.jpg",
+    "repositoryLink": "#",
+    "projectLink": "#"
+  },
+  {
+    "id": "projeto2",
+    "title": "Pizzaria",
+    "description": "Descrição do Projeto 2.",
+    "technologies": ["HTML5", "CSS3", "Bootstrap", "Vue.js"],
+    "image": "/images/eflyer_2.jpg",
+    "repositoryLink": "#",
+    "projectLink": "#"
+  },
+  {
+    "id": "projeto3",
+    "title": "Serviço de Streaming",
+    "description": "Descrição do Projeto 3.",
+    "technologies": ["HTML5", "CSS3", "Bootstrap", "Python", "Angular", "Docker"],
+    "image": "/images/eflyer.jpg",
+    "repositoryLink": "#",
+    "projectLink": "#"
+  }
+]
+
+  

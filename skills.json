@@ -1,0 +1,15 @@
+[
+    { "name": "HTML5/CSS", "icon": "fa-html5" },
+    { "name": "CSS3", "icon": "fa-css3-alt" },
+    { "name": "JavaScript", "icon": "fa-square-js" },
+    { "name": "Angular", "icon": "fa-angular" },
+    { "name": "Tailwind CSS", "icon": "fa-css3" },
+    { "name": "Python", "icon": "fa-python" },
+    { "name": "PHP", "icon": "fa-php" },
+    { "name": "Java", "icon": "fa-java" },
+    { "name": "Docker", "icon": "fa-docker" },
+    { "name": "AWS", "icon": "fa-aws" },
+    { "name": "Laravel", "icon": "fa-laravel" },
+    { "name": "Vue.js", "icon": "fa-vuejs" }
+]
+  

@@ -1,0 +1,30 @@
+[
+    {
+        "id": "projeto1Modal",
+        "title": "Batalha Naval",
+        "description": "Descrição do Projeto 1.",
+        "technologies": ["Tecnologia 1", "Tecnologia 2"],
+        "image": "/images/eflyer.jpg",
+        "projectLink": "#",
+        "repositoryLink": "#"
+    },
+    {
+        "id": "projeto2Modal",
+        "title": "Pizzaria",
+        "description": "Descrição do Projeto 2.",
+        "technologies": ["Tecnologia 3", "Tecnologia 4"],
+        "image": "/images/eflyer.jpg",
+        "projectLink": "#",
+        "repositoryLink": "#"
+    },
+    {
+        "id": "projeto3Modal",
+        "title": "Serviço de Streaming",
+        "description": "Descrição do Projeto 3.",
+        "technologies": ["Tecnologia 5", "Tecnologia 6"],
+        "image": "/images/eflyer.jpg",
+        "projectLink": "#",
+        "repositoryLink": "#"
+    }
+]
+  
