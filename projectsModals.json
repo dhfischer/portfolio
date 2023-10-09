@@ -2,27 +2,27 @@
     {
         "id": "projeto1Modal",
         "title": "Batalha Naval",
-        "description": "Descrição do Projeto 1.",
-        "technologies": ["Tecnologia 1", "Tecnologia 2"],
-        "image": "/images/eflyer.jpg",
+        "description": "Trabalho de instrodução à programação. O jogo de batalha naval que será implementado consiste de um tabuleiro de tamanho 6 x 6, no qual serão aleatoriamente posicionados 5 Navios (que ocupam uma posição do tabuleiro) e 3 submarinos (que ocupam duas posições vizinhas horizontais ou verticais do tabuleiro).",
+        "technologies": ["Python"],
+        "image": "/images/batalha-naval.png",
         "projectLink": "#",
         "repositoryLink": "#"
     },
     {
         "id": "projeto2Modal",
         "title": "Pizzaria",
-        "description": "Descrição do Projeto 2.",
-        "technologies": ["Tecnologia 3", "Tecnologia 4"],
-        "image": "/images/eflyer.jpg",
+        "description": "Trabalho de front-end. O Cardápio, seja possível buscar produtos pelo nome ou pela categoria. Na listagem de produtos, ele quer que o cliente veja o preço e uma foto do produto (quando disponível). Além disso, se o cliente clicar em um produto, deve ser possível ver os seus detalhes, com uma descrição completa.",
+        "technologies": ["HTML5", "CSS3", "Bootstrap","Javascript", "VueJS"],
+        "image": "/images/pizzaria-dhavi.png",
         "projectLink": "#",
         "repositoryLink": "#"
     },
     {
         "id": "projeto3Modal",
         "title": "Serviço de Streaming",
-        "description": "Descrição do Projeto 3.",
-        "technologies": ["Tecnologia 5", "Tecnologia 6"],
-        "image": "/images/eflyer.jpg",
+        "description": "Trabalho de conclusão de curso. O objetivo deste projeto era proporcionar a experiência de desenvolvimento de um projeto desde a especificação informal até a sua implantação. Dessa maneira, definir histórias de usuário, casos de uso, o modelo entidade-relacionamento, o projeto da arquitetura em nuvem, implementar os seus componentes e realizar a implantação",
+        "technologies": ["HTML5", "CSS3", "Boostrap", "Django", "Angular", "Docker"],
+        "image": "/images/streaming-dhavi.png",
         "projectLink": "#",
         "repositoryLink": "#"
     }
